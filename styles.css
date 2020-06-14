@@ -1,0 +1,288 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,sans-serif;
+}
+
+.background {
+  background: url(images/background.jpg) no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background a {
+  text-decoration: none;
+}
+
+.top-wrap {
+  height: 100vh;
+  position: relative;
+}
+
+.background__logo {
+  text-align: center;
+  padding: 50px 0 15px 0;
+}
+
+.background__text {
+  color: white;
+  text-align: center;
+  padding-bottom: 565px;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.logo {
+  color: white;
+  font-size: 34px;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.header {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu__item {
+  color: grey;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding: 0 15px 0 15px;
+}
+
+.menu__item:hover {
+  color: black;
+}
+
+.main {
+  background-color: white;
+}
+
+.main__container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 0 20px 60px;
+}
+
+.card__container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 30%;
+}
+
+.heading {
+  color: #535353;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 50px 0 20px 0;
+}
+
+.card__image {
+  width: 99%;
+}
+
+.card__image:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.text {
+  font-size: 15px;
+  color: grey;
+  text-align: left;
+  padding: 20px 0 20px 0;
+  line-height: 25px;
+  font-weight: 450;
+}
+
+.container-tt {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tag {
+  text-align: left;
+  font-size: 13px;
+  color: grey;
+}
+
+.time {
+  text-align: right;
+  font-size: 13px;
+  color: grey;
+}
+
+.main__button {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  color: grey;
+  font-size: 15px;
+  padding: 13px 30px;
+}
+
+.main__button:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+.button__container {
+  padding-bottom: 60px;
+}
+
+.feedback__container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 0;
+}
+
+.feedback__heading {
+  font-size: 26px;
+  font-weight: normal;
+  color: white;
+  width: 75%;
+  line-height: 35px;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #e9e9e9;
+  overflow: hidden;
+}
+
+.form__email {
+  border: none;
+  font-size: 14px;
+  color: black;
+  padding: 12px 100px 12px 10px;
+  outline: none;
+  background-color: #e9e9e9;
+}
+
+.form__button {
+  border: none;
+  padding: 12px 15px 12px 15px;
+  font-size: 14px;
+  background-color: white;
+  outline: none;
+}
+
+.feedback__text {
+  padding-top: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #e9e9e9;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 150px;
+}
+
+.footer__text {
+  color: grey;
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+.icon {
+  width: 30px;
+}
+/*# sourceMappingURL=styles.css.map */

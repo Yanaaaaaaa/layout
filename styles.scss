@@ -1,0 +1,236 @@
+@import "reset";
+
+$color_1: white;
+$color_2: grey;
+$color_3: rgb(83, 83, 83);
+$color_form: #e9e9e9;
+$fs_text: 13px;
+$fs_card-text: 15px;
+$fs_form-text: 14px;
+
+@mixin flex {
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+    display: flex;
+}
+
+body {
+    font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,sans-serif;
+}
+
+.background {
+    background: url(images/background.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    a {
+        text-decoration: none;
+    }
+}
+
+.top-wrap {
+    height: 100vh;
+    position: relative;
+}
+
+.background__logo {
+    text-align: center;
+    padding: 50px 0 15px 0;
+    }
+
+ .background__text {
+    color: $color_1;
+    text-align: center;
+    padding-bottom: 565px;
+    font-size: $fs_text;
+    letter-spacing: 4px;
+}
+
+.logo {
+    color: $color_1;
+    font-size: 34px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.header {
+    @include flex();
+    background-color: $color_1;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu__item {
+    color: $color_2;
+    font-size: $fs_text;
+    letter-spacing: 3px;
+    padding: 0 15px 0 15px;
+    &:hover {
+        color: black;
+    }
+}
+
+.main {
+    background-color: $color_1;
+}
+
+.main__container {
+    @include flex();
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 0 20px 60px;
+}
+
+.card__container {
+    @include flex();
+    flex-direction: column;
+    justify-content: start;
+    width: 30%;
+}
+
+.heading {
+    color: $color_3;
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 50px 0 20px 0;
+}
+
+.card__image {
+    width: 99%;
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.text {
+    font-size: $fs_card-text;
+    color: $color_2;
+    text-align: left;
+    padding: 20px 0 20px 0;
+    line-height: 25px;
+    font-weight: 450;
+}
+
+.container-tt {
+    @include flex();
+    justify-content: space-between;
+}
+
+.tag {
+    text-align: left;
+    font-size: $fs_text;
+    color: $color_2;
+}
+
+.time {
+    text-align: right;
+    font-size: $fs_text;
+    color: $color_2;
+}
+
+.main__button {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid $color_2;
+    border-radius: 5px;
+    background-color: $color_1;
+    color: $color_2;
+    font-size: $fs_card-text;
+    padding: 13px 30px;
+    &:hover {
+        color: black;
+        border: 2px solid black;
+    }
+}
+
+.button__container {
+    padding-bottom: 60px;
+}
+
+.feedback__container {
+    @include flex();
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+
+.feedback__heading {
+    font-size: 26px;
+    font-weight: normal;
+    color: $color_1;
+    width: 75%;
+    line-height: 35px;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: $color_form;
+    overflow: hidden;
+}
+
+.form__email {
+    border: none;
+    font-size: $fs_form-text;
+    color: black;
+    padding: 12px 100px 12px 10px;
+    outline: none;
+    background-color: $color_form;
+}
+
+.form__button {
+    border: none;
+    padding: 12px 15px 12px 15px;
+    font-size: $fs_form-text;
+    background-color: $color_1;
+    outline: none;
+}
+
+.feedback__text {
+    padding-top: 10px;
+    color: $color_1;
+    font-size: $fs_form-text;
+}
+
+.footer {
+    background-color: $color_form;
+    @include flex();
+    justify-content: space-between;
+    padding: 25px 150px;
+}
+
+.footer__text {
+    color: $color_2;
+    font-size: $fs_card-text;
+    padding-top: 7px;
+}
+
+.icon {
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

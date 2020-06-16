@@ -38,21 +38,24 @@ body {
 .background__logo {
     text-align: center;
     padding: 50px 0 15px 0;
-    }
+    font-size: 34px;
+    color: $color_1;
+}
 
  .background__text {
-    color: $color_1;
     text-align: center;
-    padding-bottom: 565px;
+    color: $color_1;
     font-size: $fs_text;
     letter-spacing: 4px;
 }
 
 .logo {
-    color: $color_1;
-    font-size: 34px;
     font-weight: 100;
     letter-spacing: 4px;
+}
+
+.logo_mobile {
+    display: none;
 }
 
 .header {
@@ -74,6 +77,10 @@ body {
     &:hover {
         color: black;
     }
+}
+
+.menu__image {
+    display: none;
 }
 
 .main {
@@ -214,9 +221,9 @@ body {
 }
 
 .footer {
-    background-color: $color_form;
     @include flex();
     justify-content: space-between;
+    background-color: $color_form;
     padding: 25px 150px;
 }
 
@@ -279,5 +286,68 @@ body {
     .card {
         padding: 0 15px 30px;
     }
+
+    .background__logo {
+        padding-top: 30vh;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        height: 3vh;
+    }
+
+    .menu__image {
+        display: block;
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        right: 20px;
+        top: 15px;
+        bottom: 7px;
+    }
+
+    .top-wrap {
+        height: 70vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo_mobile {
+        display: block;
+        font-size: $fs_form-text;
+        font-weight: 450;
+        color: black;
+        letter-spacing: 2px;
+        position: fixed;
+        left: 20px;
+        top: 10px;
+        padding: 10px 0;
+    }
+
+    .form__email {
+        padding-right: 20px;
+    }
+
+    .feedback__text {
+        text-align: center;
+    }
+
+    .feedback__heading {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 20px 15px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+    }
+
 
 }

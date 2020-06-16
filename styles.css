@@ -21,21 +21,24 @@ body {
 .background__logo {
   text-align: center;
   padding: 50px 0 15px 0;
+  font-size: 34px;
+  color: white;
 }
 
 .background__text {
-  color: white;
   text-align: center;
-  padding-bottom: 565px;
+  color: white;
   font-size: 13px;
   letter-spacing: 4px;
 }
 
 .logo {
-  color: white;
-  font-size: 34px;
   font-weight: 100;
   letter-spacing: 4px;
+}
+
+.logo_mobile {
+  display: none;
 }
 
 .header {
@@ -65,6 +68,10 @@ body {
 
 .menu__item:hover {
   color: black;
+}
+
+.menu__image {
+  display: none;
 }
 
 .main {
@@ -216,7 +223,6 @@ body {
 }
 
 .footer {
-  background-color: #e9e9e9;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -226,6 +232,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #e9e9e9;
   padding: 25px 150px;
 }
 
@@ -271,6 +278,58 @@ body {
   }
   .card {
     padding: 0 15px 30px;
+  }
+  .background__logo {
+    padding-top: 30vh;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 3vh;
+  }
+  .menu__image {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    bottom: 7px;
+  }
+  .top-wrap {
+    height: 70vh;
+  }
+  .menu {
+    display: none;
+  }
+  .logo_mobile {
+    display: block;
+    font-size: 14px;
+    font-weight: 450;
+    color: black;
+    letter-spacing: 2px;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    padding: 10px 0;
+  }
+  .form__email {
+    padding-right: 20px;
+  }
+  .feedback__text {
+    text-align: center;
+  }
+  .feedback__heading {
+    width: 90%;
+  }
+  .footer {
+    padding: 20px 15px;
+  }
+  .footer__text {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

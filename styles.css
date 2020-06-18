@@ -13,18 +13,6 @@ body {
   text-decoration: none;
 }
 
-.top-wrap {
-  height: 100vh;
-  position: relative;
-}
-
-.background__logo {
-  text-align: center;
-  padding: 50px 0 15px 0;
-  font-size: 34px;
-  color: white;
-}
-
 .background__text {
   text-align: center;
   color: white;
@@ -33,8 +21,17 @@ body {
 }
 
 .logo {
+  text-align: center;
+  padding: 50px 0 15px 0;
+  font-size: 34px;
+  color: white;
   font-weight: 100;
   letter-spacing: 4px;
+}
+
+.top-wrap {
+  height: 100vh;
+  position: relative;
 }
 
 .logo_mobile {
@@ -67,7 +64,7 @@ body {
 }
 
 .menu__item:hover {
-  color: black;
+  color: #424242;
 }
 
 .menu__image {
@@ -87,18 +84,27 @@ body {
           column-gap: 0;
 }
 
+.main__button {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  color: grey;
+  font-size: 15px;
+  padding: 13px 30px;
+}
+
+.main__button:hover {
+  color: #424242;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
 .card {
   padding: 0 20px 50px;
   -webkit-column-break-inside: avoid;
           break-inside: avoid-column;
-}
-
-.heading {
-  color: #535353;
-  text-align: left;
-  font-size: 20px;
-  font-weight: normal;
-  padding: 50px 0 20px 0;
 }
 
 .card__image {
@@ -110,6 +116,14 @@ body {
           transform: scale(1.01);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.heading {
+  color: #535353;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 50px 0 20px 0;
 }
 
 .text {
@@ -143,23 +157,6 @@ body {
   text-align: right;
   font-size: 13px;
   color: grey;
-}
-
-.main__button {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid grey;
-  border-radius: 5px;
-  background-color: white;
-  color: grey;
-  font-size: 15px;
-  padding: 13px 30px;
-}
-
-.main__button:hover {
-  color: black;
-  border: 2px solid black;
-  cursor: pointer;
 }
 
 .button__container {
@@ -198,7 +195,7 @@ body {
 .form__email {
   border: none;
   font-size: 14px;
-  color: black;
+  color: #424242;
   padding: 12px 100px 12px 10px;
   outline: none;
   background-color: #e9e9e9;
@@ -279,7 +276,7 @@ body {
   .card {
     padding: 0 15px 30px;
   }
-  .background__logo {
+  .logo {
     padding-top: 30vh;
   }
   .header {
@@ -290,6 +287,12 @@ body {
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     height: 3vh;
   }
+  .top-wrap {
+    height: 70vh;
+  }
+  .menu {
+    display: none;
+  }
   .menu__image {
     display: block;
     width: 40px;
@@ -299,17 +302,11 @@ body {
     top: 15px;
     bottom: 7px;
   }
-  .top-wrap {
-    height: 70vh;
-  }
-  .menu {
-    display: none;
-  }
   .logo_mobile {
     display: block;
     font-size: 14px;
     font-weight: 450;
-    color: black;
+    color: #424242;
     letter-spacing: 2px;
     position: fixed;
     left: 20px;
@@ -326,10 +323,98 @@ body {
     width: 90%;
   }
   .footer {
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
   .footer__text {
     font-size: 12px;
+  }
+}
+
+body a {
+  text-decoration: none;
+}
+
+.header_mobile {
+  display: none;
+}
+
+.header-0 {
+  background-color: white;
+}
+
+.logo_dark {
+  color: #424242;
+}
+
+.background__text_grey {
+  color: grey;
+}
+
+.header_static {
+  position: static;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.main__image {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.border-top {
+  border-top: 3px solid #e9e9e9;
+  padding-bottom: 50px;
+}
+
+.heading_page2 {
+  color: #424242;
+  font-size: 28px;
+}
+
+.date {
+  color: grey;
+  font-size: 17px;
+}
+
+.text_page2 {
+  color: #535353;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: 85%;
+  }
+  .border-top {
+    display: none;
+    padding-bottom: 0;
+  }
+  .logo_dark {
+    padding-top: 15vh;
+  }
+  .header_static {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    height: .1vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

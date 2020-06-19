@@ -346,10 +346,6 @@ body a {
   text-decoration: none;
 }
 
-.header_mobile {
-  display: none;
-}
-
 .header-0 {
   background-color: white;
 }
@@ -417,7 +413,7 @@ body a {
   .logo_dark {
     padding-top: 15vh;
   }
-  .header_static {
+  .header_mobile {
     position: fixed;
     top: 0;
     bottom: auto;

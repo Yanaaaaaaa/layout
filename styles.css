@@ -54,6 +54,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 5;
 }
 
 .header_fixed {
@@ -64,8 +65,6 @@ body {
   height: 20px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .menu__item {
@@ -128,6 +127,7 @@ body {
           transform: scale(1.01);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 0;
 }
 
 .heading {

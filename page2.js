@@ -15,4 +15,5 @@ document.getElementById("menu_burger").onclick = function() {
 
 function open() {
     document.getElementById("menu").classList.toggle("active");
+    document.getElementById("menu_burger").classList.toggle("active");
 };

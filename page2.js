@@ -8,3 +8,11 @@ window.onscroll = function showHeader() {
         header.classList.remove('header_fixed');
     }
 };
+
+document.getElementById("menu_burger").onclick = function() {
+    open()
+};
+
+function open() {
+    document.getElementById("menu").classList.toggle("active");
+};

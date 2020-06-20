@@ -78,22 +78,31 @@ body {
     left: 0;
     width: 100%;
     height: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.menu__item {
-    color: $color_grey;
-    font-size: $fs_menu;
-    letter-spacing: 3px;
-    padding: 0 15px 0 15px;
-    &:hover {
-        color: $color_darkgrey2;
+.menu {
+    &__item {
+        color: $color_grey;
+        font-size: $fs_menu;
+        letter-spacing: 3px;
+        padding: 0 15px 0 15px;
+
+        &:hover {
+            color: $color_darkgrey2;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        @include flex();
+    }
+
+    &_burger {
+        display: none;
     }
 }
 
-.menu__image {
-    display: none;
-}
 
 .main {
     background-color: $color_white;
@@ -300,8 +309,8 @@ body {
         position: fixed;
         top: 0;
         bottom: auto;
-        box-shadow: 0 0 5px rgba(0,0,0,0.3);
-        height: 3vh;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        height: 15px;
     }
 
     .top-wrap {
@@ -310,16 +319,69 @@ body {
 
     .menu {
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background-color: $color_white;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+        z-index: 2;
 
-        &__image {
-            display: block;
-            width: 40px;
-            height: 30px;
-            position: fixed;
-            right: 20px;
-            top: 15px;
-            bottom: 7px;
+        &__item {
+            color: $color_darkgrey2;
         }
+
+        &__list {
+            display: block;
+            padding: 50px 0 0 10px;
+        }
+
+        li {
+            padding: 10px 0 10px 0;
+        }
+
+        &_burger {
+            display: block;
+            position: fixed;
+            width: 30px;
+            height: 20px;
+            right: 20px;
+            top: 17.5px;
+            cursor: pointer;
+
+            &::before, &::after {
+                content: '';
+                background-color: $color_darkgrey2;
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                left: 0;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            span {
+                position: absolute;
+                background-color: $color_darkgrey2;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                top: 9.5px;
+            }
+
+        }
+
+    }
+
+    .active {
+        display: block;
     }
 
     .logo_mobile {
@@ -330,7 +392,7 @@ body {
         letter-spacing: 2px;
         position: fixed;
         left: 20px;
-        top: 10px;
+        top: 9px;
         padding: 10px 0;
     }
 
@@ -432,6 +494,7 @@ body {
 
     .container {
         width: 85%;
+        padding-top: 50px;
     }
 
     .border-top {
@@ -443,17 +506,13 @@ body {
         padding-top: 15vh;
     }
 
-    .header_mobile {
+    .header_mobile_fixed {
         position: fixed;
         top: 0;
         bottom: auto;
         height: .1vh;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    .container {
-        padding-top: 50px;
     }
 
 }

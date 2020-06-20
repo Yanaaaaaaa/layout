@@ -63,8 +63,8 @@ body {
   left: 0;
   width: 100%;
   height: 20px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .menu__item {
@@ -78,7 +78,17 @@ body {
   color: #424242;
 }
 
-.menu__image {
+.menu__list {
+  list-style: none;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_burger {
   display: none;
 }
 
@@ -295,24 +305,68 @@ body {
     position: fixed;
     top: 0;
     bottom: auto;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    height: 3vh;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 15px;
   }
   .top-wrap {
     height: 70vh;
   }
   .menu {
     display: none;
-  }
-  .menu__image {
-    display: block;
-    width: 40px;
-    height: 30px;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .menu__item {
+    color: #424242;
+  }
+  .menu__list {
+    display: block;
+    padding: 50px 0 0 10px;
+  }
+  .menu li {
+    padding: 10px 0 10px 0;
+  }
+  .menu_burger {
+    display: block;
+    position: fixed;
+    width: 30px;
+    height: 20px;
     right: 20px;
-    top: 15px;
-    bottom: 7px;
+    top: 17.5px;
+    cursor: pointer;
+  }
+  .menu_burger::before, .menu_burger::after {
+    content: '';
+    background-color: #424242;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+  }
+  .menu_burger::before {
+    top: 0;
+  }
+  .menu_burger::after {
+    bottom: 0;
+  }
+  .menu_burger span {
+    position: absolute;
+    background-color: #424242;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    top: 9.5px;
+  }
+  .active {
+    display: block;
   }
   .logo_mobile {
     display: block;
@@ -322,7 +376,7 @@ body {
     letter-spacing: 2px;
     position: fixed;
     left: 20px;
-    top: 10px;
+    top: 9px;
     padding: 10px 0;
   }
   .form__email {
@@ -405,6 +459,7 @@ body a {
 @media (max-width: 760px) {
   .container {
     width: 85%;
+    padding-top: 50px;
   }
   .border-top {
     display: none;
@@ -413,16 +468,13 @@ body a {
   .logo_dark {
     padding-top: 15vh;
   }
-  .header_mobile {
+  .header_mobile_fixed {
     position: fixed;
     top: 0;
     bottom: auto;
     height: .1vh;
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .container {
-    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

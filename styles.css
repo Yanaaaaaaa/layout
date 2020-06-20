@@ -365,6 +365,14 @@ body {
     height: 1px;
     top: 9.5px;
   }
+  .menu_burger .active::before {
+    -webkit-transform: rotate(45dg);
+            transform: rotate(45dg);
+  }
+  .menu_burger .active::after {
+    -webkit-transform: rotate(-45dg);
+            transform: rotate(-45dg);
+  }
   .active {
     display: block;
   }

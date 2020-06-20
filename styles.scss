@@ -376,6 +376,14 @@ body {
                 top: 9.5px;
             }
 
+            & .active::before {
+                transform: rotate(45dg);
+            }
+
+            & .active::after {
+                transform: rotate(-45dg);
+            }
+
         }
 
     }
